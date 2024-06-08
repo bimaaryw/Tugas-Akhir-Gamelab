@@ -273,8 +273,8 @@ body {
 
 .first-button a {
   display: inline-block !important;
-  padding: 10px 100px !important;
-  margin-left: 80px;
+  padding: 10px 80px !important;
+  margin-left: 0px;
   color: $primer !important;
   border: 1px solid $primer !important;
   border-radius: 23px;
@@ -851,30 +851,6 @@ Banner Style
   overflow: hidden;
 }
 
-.main-banner:after {
-  content: '';
-  // background-image: url(/assets/slider-left-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 60px;
-  width: 262px;
-  height: 625px;
-  z-index: 1;
-}
-
-.main-banner:before {
-  content: '';
-  // background-image: url(/assets/slider-right-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  top: 60px;
-  width: 1159px;
-  height: 797px;
-  z-index: -1;
-}
-
 .main-banner .left-content {
   margin-right: 15px;
 }
@@ -899,7 +875,7 @@ Banner Style
 
 .main-banner .left-content p {
   margin-bottom: 30px;
-  margin-right: 45px;
+  margin-right: 10px;
 }
 
 .main-banner .right-image {
@@ -911,7 +887,7 @@ Banner Style
 
 .main-banner .right-image img {
   max-width: 1000px;
-  margin-right: 100px;
+  margin-right: 150px;
 }
 
 // main banner end
@@ -927,29 +903,9 @@ Services Style
   position: relative;
 }
 
-.services:after {
-  content: '';
-  background-image: url(../images/services-left-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 786px;
-  height: 1217px;
-  z-index: 0;
-}
 
-.services:before {
-  content: '';
-  background-image: url(../images/services-right-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  top: 400px;
-  width: 161px;
-  height: 413px;
-  z-index: 0;
-}
+
+
 
 .services .section-heading {
   text-align: center;
@@ -1049,7 +1005,7 @@ Services Style
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   background-color: #fff;
   border-radius: 15px;
-  padding: 80px 120px 50px 120px;
+  padding: 50px 40px 50px 40px;
 }
 
 .services ul.nacc li {
@@ -1130,17 +1086,6 @@ Category
   z-index: 1;
 }
 
-.our-category:after {
-  content: '';
-  // background-image: url(../images/category-left-dec.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: 677px;
-  height: 759px;
-  z-index: 1;
-}
 
 .our-category .section-heading {
   margin-bottom: 80px;
@@ -1274,17 +1219,7 @@ form#contact:before {
   top: -242px;
 }
 
-form#contact:after {
-  background-image: url(../images/contact-bottom-right.png);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 532px;
-  height: 106px;
-  background-repeat: no-repeat;
-  content: '';
-  z-index: 1;
-}
+
 
 form#contact {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
@@ -1425,6 +1360,10 @@ footer p a {
   transition: all .5s;
 }
 
+footer .container .class-icon .li{
+  list-style: none;
+}
+
 
 
 /* 
@@ -1468,8 +1407,7 @@ responsive
     display: none;
   }
   .main-banner .right-image {
-    margin: 30px auto 0px auto;
-    text-align: center;
+   display: none;
   }
   .features-item {
     margin-bottom: 45px;

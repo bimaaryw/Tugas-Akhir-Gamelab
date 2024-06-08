@@ -7936,28 +7936,6 @@ Banner Style
   overflow: hidden;
 }
 
-.main-banner:after {
-  content: "";
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  top: 60px;
-  width: 262px;
-  height: 625px;
-  z-index: 1;
-}
-
-.main-banner:before {
-  content: "";
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 60px;
-  width: 1159px;
-  height: 797px;
-  z-index: -1;
-}
-
 .main-banner .left-content {
   margin-left: 15px;
 }
@@ -7993,7 +7971,7 @@ Banner Style
 
 .main-banner .right-image img {
   max-width: 1000px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 /* 
@@ -8186,13 +8164,13 @@ Services Style
 Category
 --------------------------------------------- 
 */
-.our-portfolio {
+.our-category {
   padding-top: 130px;
   overflow: hidden;
   position: relative;
 }
 
-.our-portfolio:before {
+.our-category:before {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
@@ -8203,7 +8181,7 @@ Category
   z-index: 1;
 }
 
-.our-portfolio:after {
+.our-category:after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
@@ -8214,45 +8192,46 @@ Category
   z-index: 1;
 }
 
-.our-portfolio .section-heading {
+.our-category .section-heading {
   margin-bottom: 80px;
 }
 
-.our-portfolio .container-fluid, .our-portfolio .container-sm, .our-portfolio .container-md, .our-portfolio .container-lg, .our-portfolio .container-xl, .our-portfolio .container-xxl {
+.our-category .container-fluid, .our-category .container-sm, .our-category .container-md, .our-category .container-lg, .our-category .container-xl, .our-category .container-xxl {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
   z-index: 2;
 }
 
-.our-portfolio .item {
+.our-category .item {
   position: relative;
   z-index: 222;
 }
 
-.portfolio-item {
+.category-item {
   border-radius: 25px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  margin: 15px;
+  margin: 0px;
 }
 
-.portfolio-item .thumb {
+.category-item .thumb {
   position: relative;
   border-radius: 50px;
 }
 
-.portfolio-item:hover .down-content h4, .portfolio-item:hover .down-content .h4,
-.portfolio-item:hover .down-content span {
+.category-item:hover .down-content h4, .category-item:hover .down-content .h4,
+.category-item:hover .down-content span {
   color: #4F6F52;
 }
 
-.portfolio-item .thumb img {
+.category-item .thumb img {
   border-top-left-radius: 23px;
   border-top-right-radius: 23px;
+  max-width: 150px;
   overflow: hidden;
 }
 
-.portfolio-item .down-content {
+.category-item .down-content {
   background-color: #fff;
   text-align: center;
   padding: 18px 0px;
@@ -8260,7 +8239,7 @@ Category
   border-bottom-right-radius: 23px;
 }
 
-.portfolio-item .down-content h4, .portfolio-item .down-content .h4 {
+.category-item .down-content h4, .category-item .down-content .h4 {
   font-size: 20px;
   font-weight: 700;
   color: #2a2a2a;
@@ -8268,13 +8247,13 @@ Category
   transition: all 0.3s;
 }
 
-.portfolio-item .down-content span {
+.category-item .down-content span {
   font-size: 15px;
   color: #afafaf;
   transition: all 0.3s;
 }
 
-.our-portfolio .owl-nav {
+.our-category .owl-nav {
   display: inline-block !important;
   position: absolute;
   top: -125px;
@@ -8282,24 +8261,24 @@ Category
   max-width: 1320px;
 }
 
-.our-portfolio .owl-nav .owl-next {
+.our-category .owl-nav .owl-next {
   margin-right: 10px;
 }
 
-.our-portfolio .owl-nav span {
+.our-category .owl-nav span {
   width: 46px;
   height: 46px;
   display: inline-block;
   text-align: center;
   line-height: 46px;
   font-size: 30px;
-  background-color: #eee;
+  background-color: #b9c5ba;
   border-radius: 50%;
   color: #fff;
   transition: all 0.5s;
 }
 
-.our-portfolio .owl-nav span:hover {
+.our-category .owl-nav span:hover {
   color: #fff;
   background-color: #4F6F52;
 }
@@ -8475,6 +8454,30 @@ form#contact button:hover {
 
 /* 
 ---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+footer {
+  background-color: #4F6F52;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 130px;
+}
+
+footer p {
+  text-align: center;
+  margin: 20px 0px;
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+  transition: all 0.5s;
+}
+
+/* 
+---------------------------------------------
 responsive
 --------------------------------------------- 
 */
@@ -8490,7 +8493,7 @@ responsive
     padding-right: 20px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 810px) {
   .intro-banner:before {
     display: none;
   }
@@ -8551,7 +8554,7 @@ responsive
   .post-item {
     margin-bottom: 70px;
   }
-  .our-portfolio .owl-nav {
+  .our-category .owl-nav {
     display: none !important;
   }
   .contact-info {
@@ -8561,7 +8564,7 @@ responsive
     padding: 45px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 400x) {
   .header-area .main-nav .logo h4, .header-area .main-nav .logo .h4 {
     font-size: 30px;
   }
@@ -8600,14 +8603,14 @@ responsive
   .services ul.nacc li .left-image img {
     float: none;
   }
-  .our-portfolio .section-heading,
+  .our-category .section-heading,
   .about-us .section-heading,
   .about-us .about-item,
   .about-us p,
   .about-us .main-green-button {
     text-align: center;
   }
-  .our-portfolio .section-heading .line-dec {
+  .our-category .section-heading .line-dec {
     margin: 0 auto;
   }
   .our-services .section-heading {
